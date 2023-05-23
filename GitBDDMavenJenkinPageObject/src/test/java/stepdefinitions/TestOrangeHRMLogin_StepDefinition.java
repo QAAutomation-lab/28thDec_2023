@@ -10,8 +10,7 @@ import io.cucumber.java.en.When;
 import utilities.SeleniumUtility;
 import webpagesfororangehrm.LoginPage;
 public class TestOrangeHRMLogin_StepDefinition extends SeleniumUtility {
-	String appUrl;
-	
+	String appUrl;	
 	LoginPage getLoginPage;
 	@Given("user has a valid url")
 	public void user_has_a_valid_url() {

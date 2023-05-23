@@ -14,7 +14,6 @@ public class TestGoogleSearch_StepDef extends SeleniumUtility {
 
 	static WebDriver driver;
 	GoogleSearchPage getGoogleSearchPage;
-
 	@Given("^User is already in Google search page$")
 	public void user_is_already_in_google_search_page() {
 		driver = setUp("chrome", "https://www.google.com");

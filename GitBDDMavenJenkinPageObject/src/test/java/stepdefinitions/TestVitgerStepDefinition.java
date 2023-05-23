@@ -14,7 +14,6 @@
 //import webpages.VtigerLoginPage;
 //
 //public class TestVitgerStepDefinition extends SeleniumUtility {
-//
 //	String appUrl = null;
 //	WebDriver driver;
 //	VtigerHomePage getVtigerHomePage;

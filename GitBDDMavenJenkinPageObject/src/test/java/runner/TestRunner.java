@@ -5,7 +5,7 @@ import io.cucumber.testng.CucumberOptions;
 
 
 
-@CucumberOptions(features = { "src/test/resources/features/OrangeHrmLogin.feature" }, // feature file or folder name
+@CucumberOptions(features = { "src/test/resources/features/GoogleSearch.feature" }, // feature file or folder name
 glue = {"stepdefinitions"}
 ,plugin = {"pretty","html:target/cucumber-reports.html"}
 ,monochrome = true

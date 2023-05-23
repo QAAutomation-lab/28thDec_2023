@@ -8,6 +8,6 @@ Feature: Perform Google Search based on requirement
 
     Examples: 
       | textToBeSearched             | expectedTitle                                |
-      | Selenium 3.0                 | Selenium 3.0 - Google Search                 |
+      | Selenium 3.0                 | Selenium 3.5 - Google Search                 |
       | Selenium 4.0                 | Selenium 4.0 - Google Search                 |
       | selenium interview questions | selenium interview questions - Google Search |

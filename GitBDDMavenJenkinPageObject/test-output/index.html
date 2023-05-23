@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Asus\AppData\Local\Temp\testng-eclipse-329723532\testng-customsuite.xml</span>
+                    <span>C:\Users\Asus\AppData\Local\Temp\testng-eclipse--2125465172\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +90,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Search Selenium 3.0 in Google search page&quot;, &quot;Optional[Perform Google Search based on requirement]&quot;)">runScenario("Search Selenium 3.0 in Google search page", "Optional[Perform Google Search based on requirement]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,7 +115,12 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify Login page components&quot;, &quot;Optional[As user, I want to verify OrangeHRM login page functionali...)">runScenario("Verify Login page components", "Optional[As user, I want to verify OrangeHRM login page functionali...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Search Selenium 4.0 in Google search page&quot;, &quot;Optional[Perform Google Search based on requirement]&quot;)">runScenario("Search Selenium 4.0 in Google search page", "Optional[Perform Google Search based on requirement]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Search selenium interview questions in Google search page&quot;, &quot;Optional[Perform Google Search based o...)">runScenario("Search selenium interview questions in Google search page", "Optional[Perform Google Search based o...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -116,6 +135,34 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">runner.TestRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Search Selenium 3.0 in Google search page&quot;, &quot;Optional[Perform Google Search based on requirement]&quot;)">
+                  </a> <!-- runScenario("Search Selenium 3.0 in Google search page", "Optional[Perform Google Search based on requirement]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Search Selenium 3.0 in Google search page", "Optional[Perform Google Search based on requirement]")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Selenium 3.5 - Google Search] but found [Selenium 3.0 - Google Search]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at org.testng.Assert.assertEquals(Assert.java:188)
+	at stepdefinitions.TestGoogleSearch_StepDef.user_reached_to_search_result_page_with_the_title(TestGoogleSearch_StepDef.java:35)
+	at ✽.user reached to search result page with the title Selenium 3.5 - Google Search(file:///F:/GitAutomation/MorningBatch1/GitBDDMavenJenkinPageObject/src/test/resources/features/GoogleSearch.feature:6)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -124,10 +171,20 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Verify Login page components&quot;, &quot;Optional[As user, I want to verify OrangeHRM login page functionali...)">
-                  </a> <!-- runScenario("Verify Login page components", "Optional[As user, I want to verify OrangeHRM login page functionali...) -->
+                  <a name="runScenario(&quot;Search Selenium 4.0 in Google search page&quot;, &quot;Optional[Perform Google Search based on requirement]&quot;)">
+                  </a> <!-- runScenario("Search Selenium 4.0 in Google search page", "Optional[Perform Google Search based on requirement]") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify Login page components", "Optional[As user, I want to verify OrangeHRM login page functionaliy]")</span>
+                  <span class="parameters">("Search Selenium 4.0 in Google search page", "Optional[Perform Google Search based on requirement]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Search selenium interview questions in Google search page&quot;, &quot;Optional[Perform Google Search based o...)">
+                  </a> <!-- runScenario("Search selenium interview questions in Google search page", "Optional[Perform Google Search based o...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Search selenium interview questions in Google search page", "Optional[Perform Google Search based on requirement]")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -137,7 +194,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Asus\AppData\Local\Temp\testng-eclipse-329723532\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Asus\AppData\Local\Temp\testng-eclipse--2125465172\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -194,16 +251,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'runner.TestRunner')
-data.setCell(0, 3, 7935);
+data.setCell(0, 3, 9025);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'runScenario')
+data.setCell(1, 2, 'runner.TestRunner')
+data.setCell(1, 3, 7487);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'runScenario')
+data.setCell(2, 2, 'runner.TestRunner')
+data.setCell(2, 3, 7055);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 seconds</span>
+              <span class="suite-total-time">Total running time: 23 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -235,12 +300,22 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">runScenario("Verify Login page components", "Optional[As user, I want to verify OrangeHRM login page functionali...)</span>
-                <span class="method-start">957 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Search Selenium 3.0 in Google search page", "Optional[Perform Google Search based on requirement]")</span>
+                <span class="method-start">676 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Search Selenium 4.0 in Google search page", "Optional[Perform Google Search based on requirement]")</span>
+                <span class="method-start">7733 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Search selenium interview questions in Google search page", "Optional[Perform Google Search based o...)</span>
+                <span class="method-start">16761 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">8893 ms</span>
+                <span class="method-start">24251 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
